@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "bun run build && npx wrangler pages deploy dist",
-    "deploy:worker": "bun run build && npx wrangler deploy",
-    "preview:deploy": "npx wrangler pages deploy dist --dry-run"
+    "deploy": "bun run build && bunx wrangler pages deploy dist",
+    "deploy:prod": "bun run build && bunx wrangler pages deploy dist --branch=production",
+    "deploy:preview": "bun run build && bunx wrangler pages deploy dist --branch=preview",
+    "deploy:dry": "bunx wrangler pages deploy dist --dry-run",
+    "deploy:token": "bun run build && bunx wrangler pages deploy dist --env production"
   },
   "dependencies": {
     "react": "^19.2.4",
