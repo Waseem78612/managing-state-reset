@@ -1,6 +1,7 @@
 {
 	    "name": "managing-state-reset",
 	    "compatibility_date": "2026-02-10",
+        "main": "src/index.ts",
 	    "assets": {
 	      "directory": "./dist"
 	    }

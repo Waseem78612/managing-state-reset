@@ -1,0 +1,5 @@
+name = "managing-state-reset"
+compatibility_date = "2025-02-11"
+
+[[assets]]
+directory = "./dist"
